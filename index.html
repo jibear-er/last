@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header aria-label="Main site header">
+    <div class="header-content container">
+      <div class="logo" tabindex="0">Portfolio</div>
+      <nav aria-label="Primary navigation">
+        <a href="#hero">Home</a>
+        <a href="#skills">My Skills</a>
+        <a href="#connect">Connect with Me</a>
+        <a href="#projects">Featured Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#get-in-touch">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-content container">
+        <div class="hero-image">
+          <img
+            src="me.jpg"
+            alt="Portrait photograph of Jan Vincent Hobayan, smart casual attire, smiling, professional studio background"
+            width="280"
+            height="280"
+            loading="lazy"
+          />
+        </div>
+        <div class="hero-text">
+          <h1 id="hero-title">Jan Vincent Hobayan</h1>
+          <p class="hero-subtext" tabindex="0">
+            I'm an aspiring second-year student with a strong passion for technology and a dream to become a skilled developer. 
+            I'm continuously learning and building projects using Java, Python, and web technologies. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">My Skills</h2>
+      <div class="skills-list container" role="list">
+        <article class="skill-card skill-java" role="listitem" tabindex="0" aria-label="Java skill">
+          <div class="skill-icon-bg" aria-hidden="true">
+            <span class="material-icons skill-icon">code</span>
+          </div>
+          <div class="skill-label">Java</div>
+        </article>
+        <article class="skill-card skill-html" role="listitem" tabindex="0" aria-label="HTML skill">
+          <div class="skill-icon-bg" aria-hidden="true">
+            <span class="material-icons skill-icon">language</span>
+          </div>
+          <div class="skill-label">HTML</div>
+        </article>
+        <article class="skill-card skill-python" role="listitem" tabindex="0" aria-label="Python skill">
+          <div class="skill-icon-bg" aria-hidden="true">
+            <span class="material-icons skill-icon">memory</span>
+          </div>
+          <div class="skill-label">Python</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="connect-section" id="connect" aria-labelledby="connect-title">
+      <h2 id="connect-title" class="connect-title">Connect with Me</h2>
+      <a
+        href="https://github.com/jibear-er"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="github-link"
+        aria-label="Visit Jan Vincent Hobayan's GitHub profile"
+      >
+        <svg
+          class="github-icon"
+          role="img"
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.388.6.113.793-.26.793-.577 0-.285-.011-1.04-.017-2.04-3.338.726-4.042-1.61-4.042-1.61C4.422 17.07 3.633 16.7 3.633 16.7c-1.087-.744.083-.729.083-.729 1.205.085 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.42-1.305.762-1.606-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.47-2.382 1.235-3.222-.123-.303-.536-1.52.117-3.166 0 0 1.008-.322 3.3 1.23a11.48 11.48 0 0 1 3.003-.404c1.018.004 2.046.138 3.003.404 2.289-1.552 3.295-1.23 3.295-1.23.656 1.646.243 2.863.12 3.166.77.84 1.234 1.912 1.234 3.222 0 4.61-2.807 5.625-5.48 5.921.43.37.814 1.1.814 2.22 0 1.606-.015 2.9-.015 3.293 0 .321.192.694.8.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+        </svg>
+        GitHub
+      </a>
+    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project Section - Black &amp; White Theme</title>
+
+</head>
+<body>
+  <section class="projects-section" id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title" class="projects-title">Featured Projects</h2>
+    <div class="projects-grid container" role="list">
+      <article class="project-card" role="listitem" tabindex="0" aria-label="Project Title 1">
+        <button type="button" class="project-button" onclick="location.href='act1.html'">
+          <div class="project-content">
+            <h3 class="project-title">Web App</h3>
+            <p class="project-description">A software application that runs on a web server and is accessed through a web browser over the internet.</p>
+          </div>
+        </button>
+      </article>
+      <article class="project-card" role="listitem" tabindex="0" aria-label="Project Title 2">
+        <button type="button" class="project-button" onclick="location.href='act2.html'">
+          <div class="project-content">
+            <h3 class="project-title">Registration</h3>
+            <p class="project-description">The form includes inputs for first name, last name, email, password (with validation pattern), contact number, and gender selection.</p>
+          </div>
+        </button>
+      </article>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
+    <section class="about" id="about" aria-labelledby="about-title">
+  <h2 id="about-title" class="section-title">About Me</h2>
+  <p>
+    I'm an aspiring second-year student with a dream of becoming a skilled developer.<br/>
+    I’m passionate about learning new technologies and bringing ideas to life through coding.<br/>
+    I’m currently exploring Java, Python, and full-stack web development.<br/>
+    Outside of coding, I enjoy watching basketball, playing volleyball, watching movies, and diving into video games.<br/>
+    I believe in balancing work with fun, and I'm always open to learning and collaborating with others!
+  </p>
+</section>
+
+
+
+ <section class="get-in-touch" id="get-in-touch" aria-labelledby="get-in-touch-title">
+  <h2 id="get-in-touch-title">Get in Touch</h2>
+  <p>If you would like to work with me or just say hello, feel free to reach out!</p>
+  <button onclick="location.href='mailto:jnvnct.hobayan@gmail.com'" aria-label="Send email to Jan Vincent Hobayan" class="email-button">Send Email</button>
+</section>
